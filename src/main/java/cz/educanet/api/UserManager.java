@@ -8,13 +8,20 @@ public class UserManager {
     ArrayList<User> userList = new ArrayList<>();
 
     // @POST
-    public boolean register(@QueryParam("username") String username, String name, @QueryParam("email") String email, String password) {
+    public boolean register(String username, String name, String email, String password) {
         User user = new User(username, name, email, password);
 
-        return false;
+        if(userDuplicate(user))
+            return false;
+
+        else {
+            userList.add(user);
+            return true;
+        }
     }
 
-    public boolean usernameDuplicate(User user) {
+    // checks for user duplicates
+    public boolean userDuplicate(User user) {
         for (int i = 0; i < userList.size(); i++) {
             if (userList.get(i).getUserName().equals(user.getUserName()))
                 return true;
@@ -25,9 +32,15 @@ public class UserManager {
         return false;
     }
 
+
     // @POST
-    public boolean login() {
-        return false;
+    public boolean login(@QueryParam("username") String username, String name, @QueryParam("email") String email, String password) {
+        User user = new User(username, name, email, password);
+
+        if (userList.contains(user))
+            return true;
+        else
+            return false;
     }
 
     // @GET
