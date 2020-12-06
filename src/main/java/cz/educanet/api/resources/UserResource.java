@@ -16,8 +16,8 @@ public class UserResource {
     // Register
     @POST
     @Path("/authentication/register")
-    public Response registerUser(@QueryParam("username") String username, String name, @QueryParam("email") String email, String password) {
-        if (userManager.register(username, name, email, password) == true)
+    public Response registerUser(@FormParam("username") String username, String name, @FormParam("email") String email, String password) {
+        if (userManager.register(username, name, email, password))
             return Response.ok("User Created").build();
         else
             return Response.status(406).build();
