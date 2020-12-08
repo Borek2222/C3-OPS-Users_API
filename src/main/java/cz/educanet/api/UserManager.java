@@ -16,6 +16,7 @@ public class UserManager {
 
         else {
             userList.add(user);
+            this.userList.add(user);
             return true;
         }
     }

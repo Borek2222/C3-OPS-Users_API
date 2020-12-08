@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d75ff521-ceb4-4a4f-a0c2-7a66932e0ced" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Users-API.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,8 @@
       <workItem from="1606814593721" duration="29000" />
       <workItem from="1606817369125" duration="3896000" />
       <workItem from="1607270224884" duration="1931000" />
-      <workItem from="1607281238618" duration="1633000" />
+      <workItem from="1607281238618" duration="2006000" />
+      <workItem from="1607413094310" duration="1925000" />
     </task>
     <servers />
   </component>
