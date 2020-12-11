@@ -1,8 +1,9 @@
 package cz.educanet.api;
 
-import javax.ws.rs.QueryParam;
+import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 
+@ApplicationScoped
 public class UserManager {
 
     ArrayList<User> userList = new ArrayList<>();
@@ -35,13 +36,20 @@ public class UserManager {
 
 
     // @POST
-    public boolean login(@QueryParam("username") String username, String name, @QueryParam("email") String email, String password) {
-        User user = new User(username, name, email, password);
+    public boolean login(User user) {
+        return find(user) != null;
+    }
 
-        if (userList.contains(user))
-            return true;
-        else
-            return false;
+    public User find(User user) {
+        for (User value : userList) {
+            if (value.getUserName().equals(user.getUserName()) && value.getPassword().equals(user.getPassword()))
+                System.out.println(user.getUserName());
+                return user;
+        }
+
+        System.out.println(user);
+
+        return null;
     }
 
     // @GET

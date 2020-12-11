@@ -1,7 +1,9 @@
 package cz.educanet.api.resources;
 
+import cz.educanet.api.User;
 import cz.educanet.api.UserManager;
 
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -11,23 +13,30 @@ import javax.ws.rs.core.Response;
 
 public class UserResource {
 
-    private  UserManager userManager = new UserManager();
+    @Inject
+    private  UserManager userManager;
+
 
     // Register
     @POST
-    @Path("/authentication/register")
-    public Response registerUser(@FormParam("username") String username, String name, @FormParam("email") String email, String password) {
+    @Path("/register")
+    public Response registerUser(@FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email, @FormParam("password") String password) {
         if (userManager.register(username, name, email, password))
-            return Response.ok("User Created").build();
+            return Response.ok("User " + username + " Created!").build();
         else
             return Response.status(406).build();
     }
 
-    // login
+    // Login
     @POST
-    @Path("/authentication/login")
-    public Response loginUser() {
-        return Response.ok().build();
+    @Path("/login")
+    public Response loginUser(@FormParam("username") String username, @FormParam("password") String password) {
+        User user = new User(username,"", "", password);
+
+        if (userManager.login(user))
+            return Response.ok("Logged in!").build();
+        else
+            return Response.status(406).build();
     }
 
     // Show User

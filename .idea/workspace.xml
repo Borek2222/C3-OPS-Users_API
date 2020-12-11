@@ -3,7 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d75ff521-ceb4-4a4f-a0c2-7a66932e0ced" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/UserResource.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,7 +65,8 @@
       <workItem from="1606817369125" duration="3896000" />
       <workItem from="1607270224884" duration="1931000" />
       <workItem from="1607281238618" duration="2006000" />
-      <workItem from="1607413094310" duration="1925000" />
+      <workItem from="1607413094310" duration="4918000" />
+      <workItem from="1607672871370" duration="4065000" />
     </task>
     <servers />
   </component>
@@ -79,10 +90,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1606814074855" />
+    <state x="277" y="75" key="SettingsEditor" timestamp="1607677131499">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1607677131499" />
     <state x="444" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1606817435296">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="444" y="257" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1606817435296" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1607674530302">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1607674530302" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1606812458710">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
