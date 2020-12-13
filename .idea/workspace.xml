@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d75ff521-ceb4-4a4f-a0c2-7a66932e0ced" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Users-API.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/UserManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/UserResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/UserManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/UserResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/AuthenticationResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +58,9 @@
       <workItem from="1607281238618" duration="2006000" />
       <workItem from="1607413094310" duration="4918000" />
       <workItem from="1607672871370" duration="4065000" />
+      <workItem from="1607677411941" duration="101000" />
+      <workItem from="1607859548672" duration="353000" />
+      <workItem from="1607878272169" duration="254000" />
     </task>
     <servers />
   </component>
