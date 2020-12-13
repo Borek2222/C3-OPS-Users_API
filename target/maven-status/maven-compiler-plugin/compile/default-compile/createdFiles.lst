@@ -1,4 +1,5 @@
 cz\educanet\api\JAXRSConfig.class
 cz\educanet\api\User.class
+cz\educanet\api\resources\AuthenticationResource.class
 cz\educanet\api\resources\UserResource.class
 cz\educanet\api\UserManager.class

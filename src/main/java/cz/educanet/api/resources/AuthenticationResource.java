@@ -42,7 +42,7 @@ public class AuthenticationResource {
 
     // Logout
     @DELETE
-    @Path("{username}/authentication/logout")
+    @Path("/authentication/logout")
     public Response logout() {
         return Response.ok().build();
     }

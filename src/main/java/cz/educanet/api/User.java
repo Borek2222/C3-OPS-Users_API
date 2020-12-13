@@ -2,6 +2,7 @@ package cz.educanet.api;
 
 public class User {
    private String username, name, email, password;
+   int id;
 
     public User(String username, String name, String email, String password) {
         this.username = username;

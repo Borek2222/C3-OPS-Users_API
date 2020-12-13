@@ -40,11 +40,17 @@ public class UserManager {
         return find(user) != null;
     }
 
+
+    // @GET
+    public boolean getUser(User user) {
+        return find(user) != null;
+    }
+
     public User find(User user) {
         for (User value : userList) {
             if (value.getUserName().equals(user.getUserName()) && value.getPassword().equals(user.getPassword()))
                 System.out.println(user.getUserName());
-                return user;
+            return user;
         }
 
         System.out.println(user);
@@ -52,10 +58,6 @@ public class UserManager {
         return null;
     }
 
-    // @GET
-    public boolean getUser() {
-        return false;
-    }
 
     // @DELETE
     public boolean logout() {
