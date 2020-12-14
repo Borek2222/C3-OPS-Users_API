@@ -42,8 +42,13 @@ public class AuthenticationResource {
 
     // Logout
     @DELETE
-    @Path("/authentication/logout")
+    @Path("/logout")
     public Response logout() {
-        return Response.ok().build();
+        User user = new User("","", "", "");
+
+        if (!userManager.logout(user))
+            return Response.ok("Logged out").build();
+        else
+            return Response.status(406).build();
     }
 }

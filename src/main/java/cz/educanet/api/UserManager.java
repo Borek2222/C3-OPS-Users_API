@@ -60,7 +60,7 @@ public class UserManager {
 
 
     // @DELETE
-    public boolean logout() {
-        return true;
+    public boolean logout(User user) {
+        return find(user) == null;
     }
 }
