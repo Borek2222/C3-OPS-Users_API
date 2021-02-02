@@ -5,10 +5,7 @@ import cz.educanet.api.User;
 import cz.educanet.api.UserManager;
 
 import javax.inject.Inject;
-import javax.ws.rs.FormParam;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -21,17 +18,23 @@ public class UserResource {
     private UserManager userManager;
 
 
+    // Show list
+    @GET
+    @Path("users")
+    public Response getAll() {
+        return Response.ok(userManager.getUsers()).build();
+    }
+
+
     // Show User
     @GET
-    @Path("/{username}")
-    public Response showUser(@FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email, @FormParam("password") String password) {
+    @Path("/{id}")
+    public Response showUser(@PathParam("id") String id, @FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email) {
 
-        User user = new User(username, name, email, password);
+        User user = new User(id, username, name, email);
 
-        if (userManager.login(user)) {
-            if (userManager.getUser(user))
-                return Response.ok("Username:  " + username + "\nName: " + name + "\nEmail: " + email).build();
-        }
+        if (userManager.getUser(user))
+            return Response.ok("Username:  " + username + "\nName: " + name + "\nEmail: " + email).build();
 
         return Response.status(406).build();
     }

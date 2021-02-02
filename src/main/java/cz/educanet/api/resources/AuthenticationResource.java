@@ -17,36 +17,30 @@ public class AuthenticationResource {
     private  UserManager userManager;
 
 
-    // Register
+    // Create
     @POST
-    @Path("/register")
-    public Response registerUser(@FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email, @FormParam("password") String password) {
-        if (userManager.register(username, name, email, password))
+    @Path("/create")
+    public Response registerUser(String id, @FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email) {
+        if (userManager.createUser(id, username, name, email))
             return Response.ok("User " + username + " Created!").build();
         else
             return Response.status(406).build();
     }
 
-    // Login
-    @POST
-    @Path("/login")
-    public Response loginUser(@FormParam("username") String username, @FormParam("password") String password) {
-        User user = new User(username,"", "", password);
 
-        if (userManager.login(user))
-            return Response.ok("Logged in!").build();
-        else
-            return Response.status(406).build();
+    @PUT
+    @Path("/edit")
+    public Response editUser(@PathParam("username") String username) {
+        return Response.ok().build();
     }
-
 
     // Logout
     @DELETE
-    @Path("/logout")
-    public Response logout() {
+    @Path("/delete")
+    public Response deleteUser() {
         User user = new User("","", "", "");
 
-        if (!userManager.logout(user))
+        if (!userManager.delete(user))
             return Response.ok("Logged out").build();
         else
             return Response.status(406).build();

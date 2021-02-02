@@ -8,11 +8,16 @@ public class UserManager {
 
     ArrayList<User> userList = new ArrayList<>();
 
-    // @POST
-    public boolean register(String username, String name, String email, String password) {
-        User user = new User(username, name, email, password);
+    // @GET
+    public ArrayList<User> getUsers() {
+        return this.userList;
+    }
 
-        if(userDuplicate(user))
+    // @POST
+    public boolean createUser(String id, String username, String name, String email) {
+        User user = new User(id, username, name, email);
+
+        if(searchDuplicate(user))
             return false;
 
         else {
@@ -23,21 +28,11 @@ public class UserManager {
     }
 
     // checks for user duplicates
-    public boolean userDuplicate(User user) {
-        for (int i = 0; i < userList.size(); i++) {
-            if (userList.get(i).getUserName().equals(user.getUserName()))
-                return true;
-            else
-                return false;
-
+    public boolean searchDuplicate(User user) {
+        for (User value : userList) {
+            return value.getUserName().equals(user.getUserName());
         }
         return false;
-    }
-
-
-    // @POST
-    public boolean login(User user) {
-        return find(user) != null;
     }
 
 
@@ -48,8 +43,8 @@ public class UserManager {
 
     public User find(User user) {
         for (User value : userList) {
-            if (value.getUserName().equals(user.getUserName()) && value.getPassword().equals(user.getPassword()))
-                System.out.println(user.getUserName());
+            if (value.getID().equals(user.getID()))
+                System.out.println(user.getID());
             return user;
         }
 
@@ -58,9 +53,29 @@ public class UserManager {
         return null;
     }
 
+    /*
+    public int getUserByID(User user) {
+        if(find(user) == user)
+            String id = user.getID();
+            int id = Integer.parseInt(id);
+            return user.getID();
+        else
+            return null;
+    }
+
+    // @POST
+    public boolean editUser(User user, String username) {
+        if(find(user) == user) {
+            userList.get(getUserByID(user)).username="";
+            return true;
+        }
+        else
+            return false;
+    }*/
+
 
     // @DELETE
-    public boolean logout(User user) {
+    public boolean delete(User user) {
         return find(user) == null;
     }
 }

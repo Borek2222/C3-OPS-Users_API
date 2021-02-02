@@ -1,14 +1,19 @@
 package cz.educanet.api;
 
 public class User {
-   private String username, name, email, password;
-   int id;
+   private String id, username, name, email;
 
-    public User(String username, String name, String email, String password) {
+
+    public User(String id, String username, String name, String email) {
+        this.id = id;
         this.username = username;
         this.name = name;
         this.email = email;
-        this.password = password;
+    }
+
+    // get ID
+    public String getID() {
+        return id;
     }
 
     // get USERNAME
@@ -24,10 +29,5 @@ public class User {
     // get EMAIL
     public String getEmail() {
         return email;
-    }
-
-    // get PASSWORD
-    public String getPassword() {
-        return password;
     }
 }
