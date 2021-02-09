@@ -29,12 +29,10 @@ public class UserResource {
     // Show User
     @GET
     @Path("/{id}")
-    public Response showUser(@PathParam("id") String id, @FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email) {
-
-        User user = new User(id, username, name, email);
+    public Response showUser(User user) {
 
         if (userManager.getUser(user))
-            return Response.ok("Username:  " + username + "\nName: " + name + "\nEmail: " + email).build();
+            return Response.ok("ID" + user.getId() + "Username:  " + user.getUsername() + "\nName: " + user.getName() + "\nEmail: " + user.getEmail()).build();
 
         return Response.status(406).build();
     }

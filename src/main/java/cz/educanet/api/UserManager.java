@@ -6,7 +6,7 @@ import java.util.ArrayList;
 @ApplicationScoped
 public class UserManager {
 
-    ArrayList<User> userList = new ArrayList<>();
+    private ArrayList<User> userList = new ArrayList<>();
 
     // @GET
     public ArrayList<User> getUsers() {
@@ -29,7 +29,7 @@ public class UserManager {
     // checks for user duplicates
     public boolean searchDuplicate(User user) {
         for (User value : userList) {
-            return value.getUserName().equals(user.getUserName());
+            return value.getUsername().equals(user.getUsername());
         }
         return false;
     }
@@ -42,8 +42,8 @@ public class UserManager {
 
     public User find(User user) {
         for (User value : userList) {
-            if (value.getID().equals(user.getID()))
-                System.out.println(user.getID());
+            if (value.getId().equals(user.getId()))
+                System.out.println(user.getId());
             return user;
         }
 

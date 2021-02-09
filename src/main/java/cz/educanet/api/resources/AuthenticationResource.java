@@ -20,28 +20,28 @@ public class AuthenticationResource {
     // Create
     @POST
     @Path("/create")
-    public Response registerUser(String id, @FormParam("username") String username, @FormParam("name") String name, @FormParam("email") String email) {
-        if (userManager.createUser(id, username, name, email))
-            return Response.ok("User " + username + " Created!").build();
+    public Response registerUser(User user) {
+        if (userManager.createUser(user.getId(), user.getUsername(), user.getName(), user.getEmail()))
+            return Response.ok("User " + user.getUsername() + " Created!").build();
         else
             return Response.status(406).build();
     }
 
 
     @PUT
-    @Path("/edit")
+    @Path("/{id}/edit")
     public Response editUser(@PathParam("username") String username) {
         return Response.ok().build();
     }
 
     // Logout
     @DELETE
-    @Path("/delete")
+    @Path("/{id}/delete")
     public Response deleteUser() {
         User user = new User("","", "", "");
 
         if (!userManager.delete(user))
-            return Response.ok("Logged out").build();
+            return Response.ok("User deleted").build();
         else
             return Response.status(406).build();
     }

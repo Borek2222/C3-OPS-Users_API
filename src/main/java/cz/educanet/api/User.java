@@ -11,23 +11,39 @@ public class User {
         this.email = email;
     }
 
-    // get ID
-    public String getID() {
+    public User() {
+
+    }
+
+    public String getId() {
         return id;
     }
 
-    // get USERNAME
-    public String getUserName() {
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getUsername() {
         return username;
     }
 
-    // get NAME
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     public String getName() {
         return name;
     }
 
-    // get EMAIL
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getEmail() {
         return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

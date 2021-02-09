@@ -6,7 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="d75ff521-ceb4-4a4f-a0c2-7a66932e0ced" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/AuthenticationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/AuthenticationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cz/educanet/api/resources/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/JAXRSConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/AuthenticationResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Users-API/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/JAXRSConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/UserManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/AuthenticationResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cz/educanet/api/resources/UserResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
